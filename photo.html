@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Alex Graves » Photo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <center>
+            <a href="./index.html" class="homelink"><header>Alex Graves</header></a>
+          </center>
+        </div>
+      </div>
+
+      <div class="row" id="navbar">
+        <center>
+          <div class="col-sm-6" id="navcol">
+            <div class="col-xs-4">
+              <a class="navlink" href="./index.html">home</a>
+            </div>
+            <div class="col-xs-4">
+              <a class="navlink" href="./about.html">about</a>
+            </div>
+            <div class="col-xs-4">
+              <a class="navlink" href="./code.html">code</a>
+            </div>
+          </div>
+          <div class="col-sm-6" id="navcol">
+            <div class="col-xs-4">
+              <a class="navlink" href="./design.html">design</a>
+            </div>
+            <div class="col-xs-4">
+              <a class="navlink" href="./art.html">art</a>
+            </div>
+            <div class="col-xs-4">
+              <a class="navlink" style="color: #FF9B44;" href="./photo.html">photo</a>
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="row" id="projects">
+        <div class="photo gallery">
+          <div class="col-sm-6" id="boxes">
+            <a href="photos/hawkmt.jpg"><img src="./photos/hawkmt.jpg" alt="hawk mountain overlook" class="img img-responsive"></a>
+          </div>
+          <div class="col-sm-6" id="boxes">
+            <a href="photos/rocks.jpg"><img src="./photos/rocks.jpg" alt="hawk mountain river of rocks" class="img img-responsive"></a>
+          </div>
+          <div class="col-sm-6" id="boxes">
+            <a href="photos/newyork.jpg"><img src="./photos/newyork.jpg" alt="new york city" class="img img-responsive"></a>
+          </div>
+          <div class="col-sm-6" id="boxes">
+            <a href="photos/dnc.jpg"><img src="./photos/dnc.jpg" alt="clinton at dnc 2016" class="img img-responsive"></a>
+          </div>
+          <div class="col-sm-6" id="boxes">
+            <a href="photos/lmm.jpg"><img src="./photos/lmm.jpg" alt="lin-manuel miranda" class="img img-responsive"></a>
+          </div>
+          <div class="col-sm-6" id="boxes">
+            <a href="photos/wbb.jpg"><img src="./photos/wbb.jpg" alt="penn women's basketball" class="img img-responsive"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="footer">
+        <div class="col-md-12">
+          <center>
+            Made with ♡ by Alex Graves. © 2017, all rights reserved.
+          </center>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      window.onload = function() {
+        baguetteBox.run('.photo');
+      };
+    </script>
+
+  </body>
+</html>
