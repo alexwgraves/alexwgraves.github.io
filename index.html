@@ -6,13 +6,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/favicon/manifest.json">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#FF9B44">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#FF9B44">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
     <meta name="theme-color" content="#FF9B44">
 
     <meta property="og:title" content="Alex Graves">
@@ -20,9 +20,7 @@
     <meta property="og:image" content="http://alex-graves.com/favicon/android-chrome-192x192.png">
 
     <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,42 +34,19 @@
 
   </head>
   <body>
-    <div class="container" id="home">
-      <div class="row">
-        <div class="col-md-12">
-          <center>
-            <a href="./" class="homelink"><header>Alex Graves</header></a>
-          </center>
-        </div>
+    <div class="container home">
+      <div class="home-header">
+        <a href="./" class="home-link">Alex Graves</a>
       </div>
 
-      <div class="row" id="homenavbar">
-        <center>
-          <div class="col-sm-6" id="navcol">
-            <div class="col-xs-4">
-              <a class="navlink" style="color: #FF9B44;" href="./">home</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./about.html">about</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./code.html">code</a>
-            </div>
-          </div>
-          <div class="col-sm-6" id="navcol">
-            <div class="col-xs-4">
-              <a class="navlink" href="./design.html">design</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./art.html">art</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./photo.html">photo</a>
-            </div>
-          </div>
-        </center>
+      <div class="navbar navbar-home">
+        <a class="navlink active" href="./">home</a>
+        <a class="navlink" href="./about.html">about</a>
+        <a class="navlink" href="./code.html">code</a>
+        <a class="navlink" href="./design.html">design</a>
+        <a class="navlink" href="./art.html">art</a>
+        <a class="navlink" href="./photo.html">photo</a>
       </div>
-
     </div>
   </body>
 </html>

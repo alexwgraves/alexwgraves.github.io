@@ -6,19 +6,21 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/favicon/manifest.json">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#FF9B44">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#FF9B44">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
     <meta name="theme-color" content="#FF9B44">
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
+    <meta property="og:title" content="Alex Graves » About">
+    <meta property="og:description" content="Personal website and portfolio">
+    <meta property="og:image" content="http://alex-graves.com/favicon/android-chrome-192x192.png">
 
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -33,62 +35,35 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <center>
-            <a href="./" class="homelink"><header>Alex Graves</header></a>
-          </center>
-        </div>
+      <div class="home-header">
+        <a href="./" class="home-link">Alex Graves</a>
       </div>
 
-      <div class="row" id="navbar">
-        <center>
-          <div class="col-sm-6" id="navcol">
-            <div class="col-xs-4">
-              <a class="navlink" href="./">home</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" style="color: #FF9B44;" href="./about.html">about</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./code.html">code</a>
-            </div>
-          </div>
-          <div class="col-sm-6" id="navcol">
-            <div class="col-xs-4">
-              <a class="navlink" href="./design.html">design</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./art.html">art</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./photo.html">photo</a>
-            </div>
-          </div>
-        </center>
+      <div class="navbar">
+        <a class="navlink" href="./">home</a>
+        <a class="navlink active" href="./about.html">about</a>
+        <a class="navlink" href="./code.html">code</a>
+        <a class="navlink" href="./design.html">design</a>
+        <a class="navlink" href="./art.html">art</a>
+        <a class="navlink" href="./photo.html">photo</a>
       </div>
 
-      <div class="row" id="bodytext">
-        <div class="col-md-12">
+      <div class="body-text">
+        <p class="body">
           Hi! I'm Alex, a junior studying <a class="colorlink" href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank">Digital Media Design</a> at the University of Pennsylvania's School of Engineering. In this major, I focus largely on computer science, and have additional electives for fine arts classes like computer modeling.
-          <br><br>
-          Outside of academics, I spend most of my time at <a class="colorlink" href="http://thedp.com" target="_blank">The Daily Pennsylvanian</a>, where I am the Digital Director. At the DP I oversee digital strategy and creative direction, and I manage seven digital departments, including web development, video, and design. On the DP's previous editorial board, I was a design editor. I work regularly as a designer (in the past, graphic design, sound, and projections) on the productions of Penn's various theater companies. I am also a member of Penn's chapter of <a class="colorlink" href="http://ostem.org" target="_blank">oSTEM</a>.
-          <br><br>
-          <center>
-            <div style="font-weight: 600;">Contact</div>
-            <a class="colorlink" href="mailto:agrav@seas.upenn.edu">Email</a> | <a class="colorlink" href="https://github.com/alexwgraves" target="_blank">GitHub</a> | <a class="colorlink" href="https://www.linkedin.com/in/alex-graves-609422129" target="_blank">LinkedIn</a> | <a class="colorlink" href="./files/alexgravesresume.pdf" target="_blank">Resume</a>
-          </center>
+        </p>
+        <p class="body">
+          Outside of academics, I spend most of my time at <a class="colorlink" href="http://thedp.com" target="_blank">The Daily Pennsylvanian</a>, where I am the Digital Director. At the DP I oversee digital strategy and creative direction, and I manage seven digital departments, including web development, video, and design. I also work as a web developer at the DP, for which I work on <a href="http://projects.thedp.com" class="colorlink" target="_blank">project pages</a> and <a href="https://eventsatpenn.com" class="colorlink" target="_blank">full-scale apps</a>. On the DP's previous editorial board, I was a design editor. I work regularly as a designer (in the past, graphic design, sound, and projections) on the productions of Penn's various theater companies. I am also a member of Penn's chapter of <a class="colorlink" href="http://ostem.org" target="_blank">oSTEM</a>.
+        </p>
+        <div class="contact">
+          <p class="contact-title">Contact</p>
+          <a class="colorlink" href="mailto:agrav@seas.upenn.edu">Email</a> | <a class="colorlink" href="https://github.com/alexwgraves" target="_blank">GitHub</a> | <a class="colorlink" href="https://www.linkedin.com/in/alex-graves-609422129" target="_blank">LinkedIn</a> | <a class="colorlink" href="./files/alexgravesresume.pdf" target="_blank">Resume</a>
         </div>
       </div>
 
-      <div class="row" id="footer">
-        <div class="col-md-12">
-          <center>
-            Made with ♡ by Alex Graves. © 2017, all rights reserved.
-          </center>
-        </div>
+      <div class="footer">
+        Made with ♡ by Alex Graves. © 2017, all rights reserved.
       </div>
-
     </div>
   </body>
 </html>

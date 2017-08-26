@@ -6,19 +6,21 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/favicon/manifest.json">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#FF9B44">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#FF9B44">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
     <meta name="theme-color" content="#FF9B44">
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
+    <meta property="og:title" content="Alex Graves » Design">
+    <meta property="og:description" content="Personal website and portfolio">
+    <meta property="og:image" content="http://alex-graves.com/favicon/android-chrome-192x192.png">
 
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
@@ -36,120 +38,90 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <center>
-            <a href="./" class="homelink"><header>Alex Graves</header></a>
-          </center>
-        </div>
+      <div class="home-header">
+        <a href="./" class="home-link">Alex Graves</a>
       </div>
 
-      <div class="row" id="navbar">
-        <center>
-          <div class="col-sm-6" id="navcol">
-            <div class="col-xs-4">
-              <a class="navlink" href="./">home</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./about.html">about</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./code.html">code</a>
-            </div>
-          </div>
-          <div class="col-sm-6" id="navcol">
-            <div class="col-xs-4">
-              <a class="navlink" style="color: #FF9B44;" href="./design.html">design</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./art.html">art</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./photo.html">photo</a>
-            </div>
-          </div>
-        </center>
+      <div class="navbar">
+        <a class="navlink" href="./">home</a>
+        <a class="navlink" href="./about.html">about</a>
+        <a class="navlink" href="./code.html">code</a>
+        <a class="navlink active" href="./design.html">design</a>
+        <a class="navlink" href="./art.html">art</a>
+        <a class="navlink" href="./photo.html">photo</a>
       </div>
 
-      <div class="row" id="projecttext">
-        <div class="col-md-12">
+      <div class="project-text">
+        <p class="body">
           From January to December 2016, I served as one of two design editors at <a class="colorlink" href="http://www.thedp.com/">The Daily Pennsylvanian</a>. During that time I supervised the daily print layout, as well as led the art direction of longer-term projects.
-          <br><br>
+        </p>
+        <p class="body">
           Aside from my work at the DP, I love graphic design, and always take opportunities to create, from projections for theater productions to posters for clubs.
-          <br><br>
+        </p>
+        <p class="body">
           Click on the images to see more designs from each project!
-        </div>
+        </p>
       </div>
 
-      <div class="row" id="projects">
-        <div class="col-sm-6" id="boxes">
-          <center>
-            <div class="design gallery">
-              <a href="events/1.png"><img src="./files/events.png" class="img img-responsive"><a href="events/2.png"><a href="events/3.png"><a href="events/4.png"><a href="events/5.png"><a href="events/6.png"><a href="events/7.png"><a href="events/8.png"><a href="events/9.png"><a href="events/10.png"><a href="events/11.png"></a>
-            </div>
-            <font color=#FF9B44>Events@Penn (website coming soon)</font>
-            <br>
+      <div class="projects">
+        <div class="boxes">
+          <div class="design gallery">
+            <a href="events/1.png"><img src="./files/events.png"><a href="events/2.png"><a href="events/3.png"><a href="events/4.png"><a href="events/6.png"><a href="events/8.png"><a href="events/9.png"><a href="events/10.png"><a href="events/11.png"></a>
+          </div>
+          <a href="https://eventsatpenn.com" class="colorlink" target="_blank">Events@Penn</a>
+          <p>
             Fall 2016, Adobe Illustrator
-          </center>
+          </p>
         </div>
-        <div class="col-sm-6" id="boxes">
-          <center>
-            <div class="design gallery">
-              <a href="constellations/1.png"><img src="./files/constellations.png" class="img img-responsive"><a href="constellations/2.png"><a href="constellations/3.png"><a href="constellations/4.png"><a href="constellations/5.png"><a href="constellations/6.png"><a href="constellations/7.png"><a href="constellations/8.png"></a>
-            </div>
-            <a class="colorlink" href="http://www.dolphin.upenn.edu/intuiton/shows.html" target="_blank">Projections for <i>Constellations</i></a>
-            <br>
+        <div class="boxes">
+          <div class="design gallery">
+            <a href="constellations/1.png"><img src="./files/constellations.png"><a href="constellations/2.png"><a href="constellations/3.png"><a href="constellations/4.png"><a href="constellations/5.png"><a href="constellations/6.png"><a href="constellations/7.png"><a href="constellations/8.png"></a>
+          </div>
+          <a class="colorlink" href="http://www.dolphin.upenn.edu/intuiton/shows.html" target="_blank">Projections for <em>Constellations</em></a>
+          <p>
             November 2016, Adobe Illustrator
-          </center>
+          </p>
         </div>
-        <div class="col-sm-6" id="boxes">
-          <center>
-            <a href="http://projects.thedp.com/2016/09/housing-guide/" target="_blank"><img src="./files/housing.png" class="img img-responsive">
-            <a class="colorlink" href="http://projects.thedp.com/2016/09/housing-guide/" target="_blank">DP Housing Guide 2016</a>
-            <br>
+        <div class="boxes">
+          <img src="./files/housing.png">
+          <a class="colorlink" href="http://projects.thedp.com/2016/09/housing-guide/" target="_blank">DP Housing Guide 2016</a>
+          <p>
             September 2016, Adobe Illustrator
-          </center>
+          </p>
         </div>
-        <div class="col-sm-6" id="boxes">
-          <center>
-            <div class="design gallery">
-              <a href="dp/housing2016.png" title="https://issuu.com/dailypenn/docs/0928_housing"><img src="./files/supplements.png" class="img img-responsive"><a href="dp/football2016.png" title="https://issuu.com/dailypenn/docs/0914_football"><a href="dp/relays2016.png" title="https://issuu.com/dailypenn/docs/penn_relays_supplement"><a href="dp/housing2015.png" title="https://issuu.com/dailypenn/docs/housing-guide"></a>
-            </div>
-            <a class="colorlink" href="https://issuu.com/dailypenn" target="_blank">DP Print Supplements</a>
-            <br>
+        <div class="boxes">
+          <div class="design gallery">
+            <a href="dp/housing2016.png" title="https://issuu.com/dailypenn/docs/0928_housing"><img src="./files/supplements.png"><a href="dp/football2016.png" title="https://issuu.com/dailypenn/docs/0914_football"><a href="dp/relays2016.png" title="https://issuu.com/dailypenn/docs/penn_relays_supplement"><a href="dp/housing2015.png" title="https://issuu.com/dailypenn/docs/housing-guide"></a>
+          </div>
+          <a class="colorlink" href="https://issuu.com/dailypenn" target="_blank">DP Print Supplements</a>
+          <p>
             Fall 2015-16, Adobe InDesign/Illustrator
-          </center>
+          </p>
         </div>
-        <div class="col-sm-6" id="boxes">
-          <center>
-            <div class="design gallery">
-              <a href="dp/n7.png" title="https://issuu.com/dailypenn/docs/1110_14041c2422d51e">
-              <img src="./files/news.png" class="img img-responsive"><a href="dp/n6.png" title="https://issuu.com/dailypenn/docs/1004"><a href="dp/n5.png" title="https://issuu.com/dailypenn/docs/0602"><a href="dp/n4.png" title="https://issuu.com/dailypenn/docs/0425"><a href="dp/n3.png" title="https://issuu.com/dailypenn/docs/0412"><a href="dp/n2.png" title="https://issuu.com/dailypenn/docs/1201"><a href="dp/n1.png" title="https://issuu.com/dailypenn/docs/1118"></a>
-            </div>
-            <a class="colorlink" href="https://issuu.com/dailypenn" target="_blank">DP News Design</a>
-            <br>
+        <div class="boxes">
+          <div class="design gallery">
+            <a href="dp/n7.png" title="https://issuu.com/dailypenn/docs/1110_14041c2422d51e">
+            <img src="./files/news.png"><a href="dp/n6.png" title="https://issuu.com/dailypenn/docs/1004"><a href="dp/n5.png" title="https://issuu.com/dailypenn/docs/0602"><a href="dp/n4.png" title="https://issuu.com/dailypenn/docs/0425"><a href="dp/n3.png" title="https://issuu.com/dailypenn/docs/0412"><a href="dp/n2.png" title="https://issuu.com/dailypenn/docs/1201"><a href="dp/n1.png" title="https://issuu.com/dailypenn/docs/1118"></a>
+          </div>
+          <a class="colorlink" href="https://issuu.com/dailypenn" target="_blank">DP News Design</a>
+          <p>
             Fall 2015-16, Adobe InDesign/Illustrator
-          </center>
+          </p>
         </div>
-        <div class="col-sm-6" id="boxes">
-          <center>
-            <div class="design gallery">
-              <a href="dp/s7.png" title="https://issuu.com/dailypenn/docs/1130_19ae4a55bbe7b2">
-              <img src="./files/sports.png" class="img img-responsive"><a href="dp/s6.png" title="https://issuu.com/dailypenn/docs/1012_7dbde2ec7ffbce"><a href="dp/s5.png" title="https://issuu.com/dailypenn/docs/0428_fe16560b5549b4"><a href="dp/s4.png" title="https://issuu.com/dailypenn/docs/0414_5666735aba29da"><a href="dp/s3.png" title="https://issuu.com/dailypenn/docs/0218_6a56e556a439da"><a href="dp/s2.png" title="https://issuu.com/dailypenn/docs/0211_1c3d2e0963ef28"><a href="dp/s1.png" title="https://issuu.com/dailypenn/docs/october_22__2015"></a>
-            </div>
-            <a class="colorlink" href="https://issuu.com/dailypenn" target="_blank">DP Sports Design</a>
-            <br>
+        <div class="boxes">
+          <div class="design gallery">
+            <a href="dp/s7.png" title="https://issuu.com/dailypenn/docs/1130_19ae4a55bbe7b2">
+            <img src="./files/sports.png" class="img img-responsive"><a href="dp/s6.png" title="https://issuu.com/dailypenn/docs/1012_7dbde2ec7ffbce"><a href="dp/s5.png" title="https://issuu.com/dailypenn/docs/0428_fe16560b5549b4"><a href="dp/s4.png" title="https://issuu.com/dailypenn/docs/0414_5666735aba29da"><a href="dp/s3.png" title="https://issuu.com/dailypenn/docs/0218_6a56e556a439da"><a href="dp/s2.png" title="https://issuu.com/dailypenn/docs/0211_1c3d2e0963ef28"><a href="dp/s1.png" title="https://issuu.com/dailypenn/docs/october_22__2015"></a>
+          </div>
+          <a class="colorlink" href="https://issuu.com/dailypenn" target="_blank">DP Sports Design</a>
+          <p>
             Fall 2015-16, Adobe InDesign/Illustrator
-          </center>
+          </p>
         </div>
       </div>
 
-      <div class="row" id="footer">
-        <div class="col-md-12">
-          <center>
-            Made with ♡ by Alex Graves. © 2017, all rights reserved.
-          </center>
-        </div>
+      <div class="footer">
+        Made with ♡ by Alex Graves. © 2017, all rights reserved.
       </div>
 
       <script>
@@ -157,7 +129,6 @@
           baguetteBox.run('.design');
         };
       </script>
-
     </div>
   </body>
 </html>

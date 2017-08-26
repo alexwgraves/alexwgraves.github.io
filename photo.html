@@ -6,19 +6,21 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/favicon/manifest.json">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#FF9B44">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#FF9B44">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
     <meta name="theme-color" content="#FF9B44">
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
+    <meta property="og:title" content="Alex Graves » Photo">
+    <meta property="og:description" content="Personal website and portfolio">
+    <meta property="og:image" content="http://alex-graves.com/favicon/android-chrome-192x192.png">
 
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
@@ -36,90 +38,63 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <center>
-            <a href="./" class="homelink"><header>Alex Graves</header></a>
-          </center>
-        </div>
+      <div class="home-header">
+        <a href="./" class="home-link">Alex Graves</a>
       </div>
 
-      <div class="row" id="navbar">
-        <center>
-          <div class="col-sm-6" id="navcol">
-            <div class="col-xs-4">
-              <a class="navlink" href="./">home</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./about.html">about</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./code.html">code</a>
-            </div>
-          </div>
-          <div class="col-sm-6" id="navcol">
-            <div class="col-xs-4">
-              <a class="navlink" href="./design.html">design</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" href="./art.html">art</a>
-            </div>
-            <div class="col-xs-4">
-              <a class="navlink" style="color: #FF9B44;" href="./photo.html">photo</a>
-            </div>
-          </div>
-        </center>
+      <div class="navbar">
+        <a class="navlink" href="./">home</a>
+        <a class="navlink" href="./about.html">about</a>
+        <a class="navlink" href="./code.html">code</a>
+        <a class="navlink" href="./design.html">design</a>
+        <a class="navlink" href="./art.html">art</a>
+        <a class="navlink active" href="./photo.html">photo</a>
       </div>
 
-      <div class="row" id="projects">
+      <div class="projects">
         <div class="photo gallery">
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/bryce2.jpg"><img src="./photos/bryce2.jpg" alt="bryce canyon flowers" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/bryce2.jpg"><img src="./photos/bryce2.jpg" alt="bryce canyon flowers"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/bryce.jpg"><img src="./photos/bryce.jpg" alt="bryce canyon" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/bryce.jpg"><img src="./photos/bryce.jpg" alt="bryce canyon"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/lizard.jpg"><img src="./photos/lizard.jpg" alt="lizard" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/lizard.jpg"><img src="./photos/lizard.jpg" alt="lizard"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/squirrel.jpg"><img src="./photos/squirrel.jpg" alt="ground squirrel" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/squirrel.jpg"><img src="./photos/squirrel.jpg" alt="ground squirrel"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/cherryblossoms.jpg"><img src="./photos/cherryblossoms.jpg" alt="cherry blossoms" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/cherryblossoms.jpg"><img src="./photos/cherryblossoms.jpg" alt="cherry blossoms"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/snow.jpg"><img src="./photos/snow.jpg" alt="forsythia in the snow" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/snow.jpg"><img src="./photos/snow.jpg" alt="forsythia in the snow"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/hawkmt.jpg"><img src="./photos/hawkmt.jpg" alt="hawk mountain overlook" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/hawkmt.jpg"><img src="./photos/hawkmt.jpg" alt="hawk mountain overlook"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/rocks.jpg"><img src="./photos/rocks.jpg" alt="hawk mountain river of rocks" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/rocks.jpg"><img src="./photos/rocks.jpg" alt="hawk mountain river of rocks"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/newyork.jpg"><img src="./photos/newyork.jpg" alt="new york city" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/newyork.jpg"><img src="./photos/newyork.jpg" alt="new york city"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/dnc.jpg"><img src="./photos/dnc.jpg" alt="clinton at dnc 2016" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/dnc.jpg"><img src="./photos/dnc.jpg" alt="clinton at dnc 2016"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/lmm.jpg"><img src="./photos/lmm.jpg" alt="lin-manuel miranda" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/lmm.jpg"><img src="./photos/lmm.jpg" alt="lin-manuel miranda"></a>
           </div>
-          <div class="col-sm-6" id="boxes">
-            <a href="photos/wbb.jpg"><img src="./photos/wbb.jpg" alt="penn women's basketball" class="img img-responsive"></a>
+          <div class="boxes image">
+            <a href="photos/wbb.jpg"><img src="./photos/wbb.jpg" alt="penn women's basketball"></a>
           </div>
         </div>
       </div>
 
-      <div class="row" id="footer">
-        <div class="col-md-12">
-          <center>
-            Made with ♡ by Alex Graves. © 2017, all rights reserved.
-          </center>
-        </div>
+      <div class="footer">
+        Made with ♡ by Alex Graves. © 2017, all rights reserved.
       </div>
-
     </div>
 
     <script>
@@ -127,6 +102,5 @@
         baguetteBox.run('.photo');
       };
     </script>
-
   </body>
 </html>
