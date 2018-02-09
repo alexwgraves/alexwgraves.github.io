@@ -57,12 +57,32 @@
         <div class="ray gallery">
           <p class="body">
             The first big project for my Advanced Computer Graphics class was to build a ray tracer.
+            It was built almost entirely from scratch with C++ and uses OpenGL's math library, GLM.
           </p>
 
           <div class="image">
             <a href="two-lights.png"><img src="two-lights.png" alt="cornell box two lights"></a>
           </div>
-          <p>This cornell box, which contains all Lambert-shaded spheres, has two differently-colored lights.</p>
+          <p>This Cornell Box, which contains all Lambert-shaded spheres, has two differently-colored lights.</p>
+
+          <p class="body">
+            In the second part of the project, we implemented a range of different materials &mdash; Lambert, Blinn-Phong, reflective, and refractive.
+            The refraction method is implemented from scratch and takes total internal refraction into account.
+          </p>
+
+          <div class="image">
+            <a href="refraction.png"><img src="refraction.png" alt="cornell box refractive"></a>
+          </div>
+          <p>
+            This Cornell Box contains a variety of different materials.
+            The left-hand refractive sphere simulates water, and has an air-like sphere in it.
+            On the right is a white Lambert sphere inside of a green transmissive sphere, and the top right sphere is a water-like refractive sphere with a reflective sphere inside.
+          </p>
+
+          <p class="body">
+            For the third part of the assignment, I implemented different sampling and warping functions.
+            These were then used for area lights (with random, grid, and stratified sampling) and ambient occlusion (using uniform hemisphere sampling).
+          </p>
 
           <div class="image">
             <a href="area-light.png"><img src="area-light.png" alt="area light"></a>
