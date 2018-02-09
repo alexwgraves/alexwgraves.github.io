@@ -6,13 +6,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="./favicon/manifest.json">
-    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#FF9B44">
-    <link rel="shortcut icon" href="./favicon/favicon.ico">
-    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#FF9B44">
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <meta name="msapplication-config" content="../favicon/browserconfig.xml">
     <meta name="theme-color" content="#FF9B44">
 
     <meta property="og:title" content="Alex Graves » Art">
@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://alex-graves.com/favicon/android-chrome-512x512.png">
 
     <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
-    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
@@ -39,33 +39,37 @@
   <body>
     <div class="container">
       <div class="home-header">
-        <a href="./" class="home-link">Alex Graves</a>
+        <a href="/" class="home-link">Alex Graves</a>
       </div>
 
       <div class="navbar">
-        <a class="navlink" href="./about.html">about</a>
-        <a class="navlink" href="./code.html">code</a>
-        <a class="navlink" href="./journalism.html">journalism</a>
-        <a class="navlink" href="./design.html">design</a>
-        <a class="navlink active" href="./art.html">art</a>
-        <a class="navlink" href="./photo.html">photo</a>
+        <a class="navlink" href="/about">about</a>
+        <a class="navlink" href="/code">code</a>
+        <a class="navlink" href="/journalism">journalism</a>
+        <a class="navlink" href="/design">design</a>
+        <a class="navlink active" href="/art">art</a>
+        <a class="navlink" href="/photo">photo</a>
       </div>
 
       <div class="projects">
         <div class="boxes">
-          <div class="art gallery">
-            <a href="art/clock.png"><img src="files/3dcomp.png"><a href="art/clock-close.png"><a href="art/char.png"><a href="art/metro.png"><a href="art/louvre-day.png"><a href="art/louvre-night.png"></a>
-          </div>
-          3D Computer Modeling
+          <a class="colorlink" href="3d-computer-modeling"><img src="3dcomp.png">3D Computer Modeling</a>
           <p>
             Spring 2017, Maya
           </p>
         </div>
         <div class="boxes">
           <div class="art gallery">
-            <a href="art/drawing-1.jpg"><img src="./files/drawing.png" class="img img-responsive"><a href="art/drawing-2.jpg"><a href="art/drawing-3.jpg"><a href="art/drawing-4.jpg"><a href="art/drawing-5.jpg"><a href="art/drawing-6.jpg"><a href="art/drawing-7.jpg"></a>
+            <a href="drawing/1.jpg">
+            <img src="drawing.png">
+            <a href="drawing/2.jpg">
+            <a href="drawing/3.jpg">
+            <a href="drawing/4.jpg">
+            <a href="drawing/5.jpg">
+            <a href="drawing/6.jpg">
+            <a href="drawing/7.jpg"></a>
           </div>
-          Drawing 1
+          <h3>Drawing 1</h3>
           <p>
             Fall 2016, Charcoal
           </p>
@@ -80,8 +84,6 @@
         window.onload = function() {
           baguetteBox.run('.art');
         };
-
-        history.replaceState({}, 'Alex Graves » Art', '/art');
       </script>
     </div>
   </body>

@@ -4,6 +4,19 @@ body {
   color: #333;
 }
 
+h2 {
+  font-family: "Playfair Display", serif;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 16px;
+  color: #FF9B44;
+  margin: 0;
+}
+
 p {
   margin-top: 0;
   font-size: 14px;
@@ -11,6 +24,7 @@ p {
 
 p.body {
   font-size: 16px;
+  text-align: justify;
 }
 
 img {
