@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Alex Graves » Mini Minecraft</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../../favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../favicon/manifest.json">
+    <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#FF9B44">
+    <link rel="shortcut icon" href="../../favicon/favicon.ico">
+    <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
+    <meta name="theme-color" content="#FF9B44">
+
+    <meta property="og:title" content="Alex Graves » Ray Tracer">
+    <meta property="og:description" content="Personal website and portfolio">
+    <meta property="og:image" content="https://alex-graves.com/code/minecraft.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,600|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/stylesheet.css">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89881437-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="home-header">
+        <a href="/" class="home-link">Alex Graves</a>
+      </div>
+
+      <div class="navbar">
+        <a class="navlink" href="/about">about</a>
+        <a class="navlink" href="/code">code</a>
+        <a class="navlink" href="/journalism">journalism</a>
+        <a class="navlink" href="/design">design</a>
+        <a class="navlink" href="/art">art</a>
+        <a class="navlink" href="/photo">photo</a>
+      </div>
+
+      <h2>Mini Minecraft</h2>
+
+      <p class="body">
+        The final project for my Computer Graphics class in December 2017 was to build a less feature-rich version of Minecraft in C++.
+        I worked with two other students, and I personally implemented the game engine and player physics, texturing (with OpenGL), the inventory system, and procedurally-placed trees.
+      </p>
+
+      <p class="body">
+        The player physics implement gravity and collisions, which use ray casting to check if the player is in contact with surrounding surfaces.
+        I also built the game engine, which updates at 60 frames per second.
+      </p>
+
+      <div class="embed-container">
+        <iframe src="https://www.youtube.com/embed/vSIgeITbiBc?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <p class="body">
+        I implemented texturing using OpenGL and GLSL shaders.
+        I used ten different official Minecraft textures, and made sure to support transparency and animation for the lava and water.
+        Different textures have different Blinn-Phong specularity to reflect their different material types.
+      </p>
+
+      <div class="embed-container">
+        <iframe src="https://www.youtube.com/embed/fkZlPRN3liM?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <p class="body">
+        I created an inventory system and player HUD, again using the official Minecraft textures for the GUI.
+        When a player breaks blocks, they are added to the inventory, and when the player places them, they are expended.
+        I also added a &ldquo;creative&rdquo; inventory mode that gives the player an unlimited number of all types of blocks.
+      </p>
+
+      <div class="embed-container">
+        <iframe src="https://www.youtube.com/embed/FnMevUWOW68?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <p class="body">
+        Finally, I added procedurally-placed assets.
+        I created a tree primitive and used a randomly-offset grid to place each tree.
+        The height of the trees was determined by the fractal Brownian noise function that one of my group members had implemented for terrain generation.
+      </p>
+
+      <div class="embed-container">
+        <iframe src="https://www.youtube.com/embed/CNwNp9_jLt8?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="footer">
+        Made with ♡ by Alex Graves. © 2018, all rights reserved.
+      </div>
+    </div>
+  </body>
+</html>

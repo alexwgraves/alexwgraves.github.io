@@ -131,6 +131,24 @@ a:hover, a.colorlink:hover {
   margin-bottom: 20px;
 }
 
+/* YouTube embedding styling */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 15px;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (max-width: 455px) {
   .home-header {
     margin-top: 0;
