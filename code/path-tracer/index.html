@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Alex Graves » Ray Tracer</title>
+    <title>Alex Graves » Path Tracer</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -15,9 +15,9 @@
     <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
     <meta name="theme-color" content="#FF9B44">
 
-    <meta property="og:title" content="Alex Graves » Ray Tracer">
+    <meta property="og:title" content="Alex Graves » Path Tracer">
     <meta property="og:description" content="Personal website and portfolio">
-    <meta property="og:image" content="https://alex-graves.com/code/raytracer.png">
+    <meta property="og:image" content="https://alex-graves.com/code/pathtracer.png">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
@@ -50,48 +50,46 @@
         <a class="navlink" href="/photo">photo</a>
       </div>
 
-      <h2>Ray Tracer</h2>
+      <h2>Path Tracer</h2>
 
       <div class="projects">
-        <div class="ray gallery">
+        <div class="path gallery">
           <p class="body">
-            The first big project for my Advanced Computer Graphics class was to build a ray tracer.
-            It was built almost entirely from scratch with C++ and uses OpenGL's math library, GLM.
+            The second big project for my Advanced Computer Graphics class was to build a path tracer in C++.
+            The following scenes are all custom and rendered with 400 samples per pixel and a recursion depth of eight.
           </p>
 
           <div class="image">
-            <a href="two-lights.png"><img src="two-lights.png" alt="cornell box two lights"></a>
+            <a href="custom1.png"><img src="custom1.png" alt="transmissive and reflective spheres on tile"></a>
           </div>
-          <p>This Cornell Box, which contains all Lambert-shaded spheres, has two differently-colored lights.</p>
+          <p>This scene contains four differently-colored transmissive spheres and three reflective spheres of different roughness, all on a textured tile floor.</p>
 
           <p class="body">
-            In the second part of the project, we implemented a range of different materials &mdash; Lambert, Blinn-Phong, reflective, and refractive.
-            The refraction method is implemented from scratch and takes total internal refraction into account.
+            For the varying roughness of the reflective spheres, I implemented a microfacet BRDF, which uses a Trowbridge-Reitz distribution.
+            The reflective and transmissive surfaces use Fresnel reflection coefficients for dielectric surfaces.
           </p>
 
           <div class="image">
-            <a href="refraction.png"><img src="refraction.png" alt="cornell box refractive"></a>
+            <a href="custom2.png"><img src="custom2.png" alt="reflective sphere and lambert cubes"></a>
+          </div>
+          <p>This scene contains a reflective sphere (with a microfacet roughness of 0.05) and two Lambert-shaded cubes.</p>
+
+          <p class="body">
+            For diffuse surfaces, I implemented both Lambert and Oren-Nayar BRDFs.
+          </p>
+
+          <div class="image">
+            <a href="custom3.png"><img src="custom3.png" alt="two reflective cubes, rainbow lambert spheres, and brick texture"></a>
           </div>
           <p>
-            This Cornell Box contains a variety of different materials.
-            The left-hand refractive sphere simulates water, and has an air-like sphere in it.
-            On the right is a white Lambert sphere inside of a green transmissive sphere, and the top right sphere is a water-like refractive sphere with a reflective sphere inside.
+            This scene has two reflective cubes, Lambert-shaded spheres, and a brick textured floor.
+            It also has three lights &mdash; a blue one above left, a yellow one above right, and a white one right behind the camera.
           </p>
 
           <p class="body">
-            For the third part of the assignment, I implemented different sampling and warping functions.
-            These were then used for area lights (with random, grid, and stratified sampling) and ambient occlusion (using uniform hemisphere sampling).
+            In order to reduce variance, I implemented multiple importance sampling.
+            This uses a power heuristic to weight the BSDF and light source samples when evaluating the Light Transport Equation.
           </p>
-
-          <div class="image">
-            <a href="area-light.png"><img src="area-light.png" alt="area light"></a>
-          </div>
-          <p>This area light uses stratified sampling for the shadows.</p>
-
-          <div class="image">
-            <a href="ambient.png"><img src="ambient.png" alt="ambient occlusion"></a>
-          </div>
-          <p>I used stratified sampling and a uniform hemisphere warping function to implement ambient occlusion.</p>
         </div>
       </div>
 
@@ -102,7 +100,7 @@
 
     <script>
       window.onload = function() {
-        baguetteBox.run('.ray');
+        baguetteBox.run('.path');
       };
     </script>
   </body>
